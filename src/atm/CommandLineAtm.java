@@ -1,4 +1,4 @@
-
+package atm;
 import java.util.Scanner;
 
 class CommandLineAtm {

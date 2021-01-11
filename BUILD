@@ -8,7 +8,7 @@ dagger_rules()
 
 java_library(
     name = "atm",
-    srcs = glob(["src/*.java"]),
+    srcs = glob(["src/atm/*.java"]),
     deps = [
         "//:dagger",
     ],
@@ -16,6 +16,7 @@ java_library(
 
 java_binary(
     name = "CommandLineAtm",
-    main_class = "CommandLineAtm",
+    # bc we have a BUILD file in the root, so we don't need to do src/atm, just atm
+    main_class = "atm.CommandLineAtm",
     runtime_deps = [":atm"],
 )
