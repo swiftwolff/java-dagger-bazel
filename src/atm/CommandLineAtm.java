@@ -12,3 +12,5 @@ class CommandLineAtm {
       }
     }
   }
+
+  // Stops at abstraction for output
